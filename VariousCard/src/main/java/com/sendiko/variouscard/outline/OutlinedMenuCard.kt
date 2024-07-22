@@ -16,6 +16,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+/**
+ * Sendiko's custom composable that displays an outlined card with optional icon, title, and text body.
+ *
+ * @param modifier Modifier to be applied to the card.
+ * @param onClick Callback to be invoked when the card is clicked.
+ * @param icon An optional composable to display an icon.
+ * @param title An optional title to display.
+ * @param textBody An optional text body to display.
+ * @param colors Custom colors for the card. Defaults to [OutlinedMenuCardColors].
+ *
+ * @author Sendiko
+ */
 @Composable
 fun OutlinedMenuCard(
     modifier: Modifier = Modifier,

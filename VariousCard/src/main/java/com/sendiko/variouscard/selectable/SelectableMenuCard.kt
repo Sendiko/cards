@@ -15,6 +15,19 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+/**
+ * Sendiko's custom composable that displays a selectable card with optional icon, title, and text body.
+ *
+ * @param modifier Modifier to be applied to the card.
+ * @param onClick Callback to be invoked when the card is clicked.
+ * @param icon An optional composable to display an icon.
+ * @param title An optional title to display.
+ * @param textBody An optional text body to display.
+ * @param isSelected Whether the card is currently selected.
+ * @param colors Custom colors for the card in selected and unselected states. Defaults to [SelectableMenuCardColors].
+ *
+ * @author Sendiko
+ */
 @Composable
 fun SelectableMenuCard(
     modifier: Modifier = Modifier,
