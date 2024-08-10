@@ -2,6 +2,41 @@
 
 Sendiko's custom composable that create a beautiful card with icons, title, and text content!
 
+## Add it to your projects
+
+in libs.versions.toml add:
+
+```toml
+ [versions]
+ variousCards = "1.0.1
+
+ [libraries]
+ various-cards = { module = "com.github.Sendiko:various-cards", version.ref = "variousCards" }
+```
+
+in build.gradle app module: 
+
+```gradle
+ dependencies {
+    implementation(libs.various.cards)
+ }
+```
+
+if you haven't already, add jitpack to settings.gradle projects:
+
+```gradle
+ dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://jitpack.io") // add this line
+          }
+      }
+  }
+```
+
 ## Variant
 
 Currently there's 3 card variants, and more are coming!
