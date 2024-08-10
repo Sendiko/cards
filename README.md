@@ -9,7 +9,9 @@ in libs.versions.toml add:
 ```toml
  [versions]
  variousCards = "1.0.1
+```
 
+```toml
  [libraries]
  various-cards = { module = "com.github.Sendiko:various-cards", version.ref = "variousCards" }
 ```
